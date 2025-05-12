@@ -37,6 +37,7 @@ st.markdown("""
 st.sidebar.image("aixvenus_logo.png", width=250)
 st.sidebar.title("🔐 Gemini API Key")
 st.sidebar.write("Change the Gemini API Key if requests run out on the default one.")
+st.sidebar.write("Create your own new API Key at https://aistudio.google.com/apikey")
 
 use_default = st.sidebar.checkbox("Use default key", value=True)
 
