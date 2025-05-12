@@ -41,7 +41,7 @@ st.sidebar.write("Change the Gemini API Key if requests run out on the default o
 use_default = st.sidebar.checkbox("Use default key", value=True)
 
 if use_default:
-    api_key = "AIzaSyC90ZYkDCoNBZJonFjECRSEkxRti6X3QFU"
+    api_key = "AIzaSyAcoCcYm696wkfHYC6ZFXdgXn2lVktpgFg"
     st.sidebar.info("Using default API key")
 else:
     api_key = st.sidebar.text_input("Enter your Google Gemini API Key", type="password")
