@@ -52,7 +52,7 @@ else:
 # ---- INIT API ----
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-3-flash-preview'')
+    model = genai.GenerativeModel('gemini-3-flash-preview')
 else:
     st.stop()  # Stop execution if no key is set
 
@@ -135,5 +135,6 @@ with right_col:
 **Email:** [Nitesh@aixvenus.com](mailto:Nitesh@aixvenus.com)  
 **Cell:** +14702770602
 """)
+
 
 
