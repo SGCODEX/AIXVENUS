@@ -42,7 +42,7 @@ st.sidebar.write("Create your own new API Key at https://aistudio.google.com/api
 use_default = st.sidebar.checkbox("Use default key", value=True)
 
 if use_default:
-    api_key = "AIzaSyCGvwDJKGnGs63HizWSqXCd624b2ZO2omg"
+    api_key = "AIzaSyDpUUuy5hJYlzosSxN8ry9vAk3HtDRiWnU"
     st.sidebar.info("Using default API key")
 else:
     api_key = st.sidebar.text_input("Enter your Google Gemini API Key", type="password")
@@ -52,7 +52,7 @@ else:
 # ---- INIT API ----
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-3-flash-preview')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 else:
     st.stop()  # Stop execution if no key is set
 
@@ -135,6 +135,7 @@ with right_col:
 **Email:** [Nitesh@aixvenus.com](mailto:Nitesh@aixvenus.com)  
 **Cell:** +14702770602
 """)
+
 
 
 
