@@ -42,7 +42,7 @@ st.sidebar.write("Create your own new API Key at https://aistudio.google.com/api
 use_default = st.sidebar.checkbox("Use default key", value=True)
 
 if use_default:
-    api_key = "AIzaSyBGxd7NJ9OvAzi1RcShYS1LuXZaVVUdrKo"
+    api_key = "AIzaSyCuRFaR1_t924uIq_VvTsLEbXpq4hhrn0A"
     st.sidebar.info("Using default API key")
 else:
     api_key = st.sidebar.text_input("Enter your Google Gemini API Key", type="password")
@@ -81,7 +81,7 @@ def query_excel(all_dfs, query):
 
     all_data_str = ""
     for sheet_name, df in all_dfs.items():
-        all_data_str += f"--- Sheet: {sheet_name} ---\n{df.to_string()}\n\n"
+        all_data_str += f"--- Sheet: {sheet_name} ---\n{df.head(50).to_string()}\n\n"
 
     prompt = f"""You are an expert at understanding and answering questions based on data in one or more Excel sheets.
     Here is the data from the Excel sheets:
@@ -135,6 +135,7 @@ with right_col:
 **Email:** [Nitesh@aixvenus.com](mailto:Nitesh@aixvenus.com)  
 **Cell:** +14702770602
 """)
+
 
 
 
